@@ -2,7 +2,7 @@
 run multiple test case with jest!
 
 ```
- npm run leetcode  {YOURFILENAME} {MAINFUNCTION}
+npm run leetcode  {YOURFILENAME} {MAINFUNCTION}
 ```
 
 ```
