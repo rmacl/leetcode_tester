@@ -5,6 +5,8 @@ run multiple test case with jest!
 If you already have node modules & jest in your test directory
 all you need to do is add leetcode.js file and add script to package.json
 
+
+
 //leetcode.js
 ```javascript
 let fs = require('fs');
@@ -46,7 +48,9 @@ function createTestContents(functionName , fileName){
     textContents += `});  \n `;
     return textContents;
 }
+
 ```
+
 package.json <= you need to add  "leetcode" : "node leetcode.js" script( and yes! off course you can change script & file name)
 ```
 {
@@ -67,6 +71,8 @@ package.json <= you need to add  "leetcode" : "node leetcode.js" script( and yes
 
 ```
 
+
+
 then run leetcode script with file, function name you want to create
 ex) npm run  leetcode countCats getCount
 
@@ -74,9 +80,13 @@ ex) npm run  leetcode countCats getCount
 npm run leetcode  {YOURFILENAME} {MAINFUNCTION}
 ```
 
+
 ![jest leetcode test](image/generated_test.png)
 
+
 Let's go to see what's is thos two file!
+
+
 
 countCat.js
 ```javascript
@@ -99,7 +109,9 @@ test('leetcode test', () => {
 ```
 
 
+
 once you add your function and test case, you should be able to run test!
+
 
 ```
 npm test
